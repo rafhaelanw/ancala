@@ -1,0 +1,28 @@
+body{
+    background-color: #89af75;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Atur lebar kolom */
+    gap: 20px; /* Atur jarak antar kolom */
+}
+
+.gambar {
+    grid-column: 1; /* Tempatkan gambar di kolom 1 */
+    height: auto; /* Jaga rasio aspek gambar */
+    margin-top: auto; /* Hapus margin default */
+    margin-bottom: auto;
+    border-radius: 100%;
+    
+}
+
+.deskripsi {
+    grid-column: 2; /* Tempatkan deskripsi di kolom 2 */
+    padding: 20px; /* Tambahkan padding */
+}
+
