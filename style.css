@@ -14,7 +14,6 @@
     box-sizing: border-box;
     outline: none; border: none;
     text-decoration: none;
-    text-transform: capitalize;
     transition: .2s linear;
 }
 
@@ -666,36 +665,3 @@ section{
     }
 
     /* end */
-
-    /* slider */
-    .hi-slide {
-        position: relative;
-        height: 294px;
-        width: 754px;
-        border-radius: 50px;
-        margin: 115px auto 0;
-    }
-
-    .hi-slide .hi-next,
-    .hi-slide .hi-prev {
-        position: absolute;
-        top: 50%;
-        width: 40px;
-        height: 40px;
-        margin-top: -20px;
-        border-radius: 50px;
-        line-height: 40px;
-        text-align: center;
-        cursor: pointer;
-        background-color: white;
-        color: black;
-        transition: all 0.7s;
-        font-size: 20px;
-        font-weight: bold;
-    }
-
-    .hi-slide .hi-next:hover,
-    .hi-slide .hi-prev:hover {
-        opacity: 1;
-        background-color: white;
-    }

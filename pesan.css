@@ -1,0 +1,80 @@
+body{
+    background: url(bg\ ancala.jpg) no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.pesan{
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 500px;
+    height: 300px;
+    font-size: 1.7rem;
+    width: 49%;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    border-radius: .5rem;
+    text-transform: none;
+}
+
+root{
+    --main: #073f00;
+    --bg: #89af75;
+    --black:#000;
+    --white: #fff;
+    --box-shadow: 0 .5rem rgb(0,0,0,0.1);
+}
+
+.btn{
+    font-size: 1.7rem;
+    display: inline-block;
+    background: var(--main);
+    color: var(--white);
+    box-shadow: var(--box-shadow);
+    border-radius: 5rem;
+    padding: 0.9rem 3rem;
+    margin-top: 1rem;
+    z-index: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    background: #ff9748;
+    z-index: -1;
+    transition: .3s linear;
+    left: 0;
+}
+
+.btn:hover::before{
+    width: 100%;
+}
+
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    text-align: center;
+    color: black;
+}
+
+p{
+    text-align: center;
+    color: black;
+    font-size: 30px
+}
